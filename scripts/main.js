@@ -34,5 +34,9 @@ arrowRight.addEventListener('click', () => {
   if (productIndex < numProducts - 1) {
     productIndex++;
     slider.style.transform = `translateX(-${productIndex * 100}%)`;
+  } else {
+    // Reset index to zero if maximum index is exceeded
+    productIndex = 0;
+    slider.style.transform = `translateX(-${productIndex * 100}%)`;
   }
 });
