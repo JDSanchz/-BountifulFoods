@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+#logo{
+    width: 300px;
+    margin-bottom: 1%;
+    margin-left: 10%;
+}
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    background-color: #2e6c30;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff7e3;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+  position: relative;
+  font-size: 2.7rem;
+  color: #fff7e3;
+}
+
+.nav-link:hover{
+  color: #ffda9f;
+}
+
+.cart-w{
+    grid-column: 4/5;
+}
+.cart-w img {
+    width: 50px;
+    margin-left: 200px;
+    margin-right: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 600px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 100%;
+  background-color: #fff7e3;
+  padding-bottom: 30px;
+}
+
+.carousel-item img {
+  height: 450px;
+  margin: 0 auto;
+  display: block;
+}
+
+.carousel-item p{
+  font-size:20px;
+  text-align: center;
+  color: #5a432b;
+}
+.carousel-item h3{
+  font-size: 28px;
+  text-align: center;
+  color: #5a432b;
+  margin-bottom: 8px;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #5a432b;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
+
+  

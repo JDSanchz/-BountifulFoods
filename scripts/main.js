@@ -1,59 +1,49 @@
-// Get the HTML elements for the slider and arrows
-const slider = document.querySelector('.slider');
-const arrowLeft = document.querySelector('.arrow-left');
-const arrowRight = document.querySelector('.arrow-right');
+const carousel = document.querySelector('.carousel');
+const prevButton = document.querySelector('.carousel-prev');
+const nextButton = document.querySelector('.carousel-next');
+const productsUrl = 'data/data.json';
 
-// Initialize the product index
-let productIndex = 0;
+let currentIndex = 0;
 
-// Load products from JSON file
-fetch('../data/data.json')
+// Fetch the products data from the JSON file
+fetch(productsUrl)
   .then(response => response.json())
   .then(data => {
-    // Add each product to the slider
-    data.products.forEach(product => {
-      // Create a new element for the product
-      const sliderItem = document.createElement('div');
-      // Add a class to the new element
-      sliderItem.classList.add('slider-item');
-      // Set the HTML content of the new element
-      sliderItem.innerHTML = `
+    const products = data.products;
+    // Create a carousel item for each product
+    products.forEach(product => {
+      const item = document.createElement('div');
+      item.classList.add('carousel-item');
+      item.innerHTML = `
         <img src="${product.img_path}" alt="${product.name}">
-        <h2>${product.name}</h2>
+        <h3>${product.name}</h3>
         <p>${product.description}</p>
       `;
-      // Add the new element to the slider
-      slider.appendChild(sliderItem);
+      carousel.appendChild(item);
     });
-  });
+  })
+  .catch(error => console.error(error));
 
-// Move slider to the left when left arrow is clicked
-arrowLeft.addEventListener('click', () => {
-  // Only move the slider if the current index is greater than zero
-  if (productIndex > 0) {
-    // Decrement the index
-    productIndex--;
-    // Move the slider to the left by translating it horizontally
-    slider.style.transform = `translateX(-${productIndex * 66.5}%)`;
-  }
-});
-
-// Move slider to the right when right arrow is clicked
-arrowRight.addEventListener('click', () => {
-  // Get the number of products in the slider
-  const numProducts = slider.children.length;
-  // Only move the slider if the current index is less than the maximum index
-  if (productIndex < numProducts - 1) {
-    // Increment the index
-    productIndex++;
-    // Move the slider to the right by translating it horizontally
-    slider.style.transform = `translateX(-${productIndex * 66.5}%)`;
+// Move to the previous item in the carousel
+prevButton.addEventListener('click', () => {
+  if (currentIndex === 0) {
+    currentIndex = carousel.children.length - 1;
   } else {
-    // Reset the index to zero if the maximum index is exceeded
-    productIndex = 0;
-    slider.style.transform = `translateX(-${productIndex * 66.5}%)`;
+    currentIndex--;
   }
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 });
+
+// Move to the next item in the carousel
+nextButton.addEventListener('click', () => {
+  if (currentIndex === carousel.children.length - 1) {
+    currentIndex = 0;
+  } else {
+    currentIndex++;
+  }
+  carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
 
 
 const hamburger = document.querySelector(".hamburger");
