@@ -3,32 +3,32 @@
       {
         "name": "Berries Smothie Bowl",
         "description": "Product A is a high-quality, durable item that is perfect for everyday use. Its sleek design and comfortable grip make it a must-have for any home.",
-        "img_path": "/images/product_a.png"
+        "img_path": "images/product_a.png"
       },
       {
         "name": "Electric Orange Juice",
         "description": "Product B is a versatile tool that can be used for a variety of tasks. Its compact size and easy-to-use features make it ideal for both novice and experienced users.",
-        "img_path": "/images/product_b.png"
+        "img_path": "images/product_b.png"
       },
       {
         "name": "Magical Grapes",
         "description": "Product C is a premium product that is built to last. Its advanced features and cutting-edge technology make it a top choice for professionals and enthusiasts alike.",
-        "img_path": "/images/product_c.png"
+        "img_path": "images/product_c.png"
       },
       {
         "name": "Royal Shake",
         "description": "Product C is a premium product that is built to last. Its advanced features and cutting-edge technology make it a top choice for professionals and enthusiasts alike.",
-        "img_path": "/images/product_d.png"
+        "img_path": "images/product_d.png"
       },
       {
         "name": "Crazy Bananas",
         "description": "Product C is a premium product that is built to last. Its advanced features and cutting-edge technology make it a top choice for professionals and enthusiasts alike.",
-        "img_path": "/images/product_e.png"
+        "img_path": "images/product_e.png"
       },
       {
         "name": "Fiery Watermelons",
         "description": "Product C is a premium product that is built to last. Its advanced features and cutting-edge technology make it a top choice for professionals and enthusiasts alike.",
-        "img_path": "/images/product_f.png"
+        "img_path": "images/product_f.png"
       }
     ]
   }
