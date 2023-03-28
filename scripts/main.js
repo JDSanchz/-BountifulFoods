@@ -5,10 +5,10 @@ const productsUrl = 'data/data.json';
 
 let currentIndex = 0;
 
-// Fetch the products data from the JSON file
-fetch(productsUrl)
-  .then(response => response.json())
-  .then(data => {
+async function fetchProducts() {
+  try {
+    const response = await fetch(productsUrl);
+    const data = await response.json();
     const products = data.products;
     // Create a carousel item for each product
     products.forEach(product => {
@@ -21,8 +21,12 @@ fetch(productsUrl)
       `;
       carousel.appendChild(item);
     });
-  })
-  .catch(error => console.error(error));
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+fetchProducts();
 
 // Move to the previous item in the carousel
 prevButton.addEventListener('click', () => {
@@ -43,6 +47,7 @@ nextButton.addEventListener('click', () => {
   }
   carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 });
+
 
 
 
