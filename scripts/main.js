@@ -34,7 +34,7 @@ arrowLeft.addEventListener('click', () => {
     // Decrement the index
     productIndex--;
     // Move the slider to the left by translating it horizontally
-    slider.style.transform = `translateX(-${productIndex * 100}%)`;
+    slider.style.transform = `translateX(-${productIndex * 66.5}%)`;
   }
 });
 
@@ -47,10 +47,31 @@ arrowRight.addEventListener('click', () => {
     // Increment the index
     productIndex++;
     // Move the slider to the right by translating it horizontally
-    slider.style.transform = `translateX(-${productIndex * 100}%)`;
+    slider.style.transform = `translateX(-${productIndex * 66.5}%)`;
   } else {
     // Reset the index to zero if the maximum index is exceeded
     productIndex = 0;
-    slider.style.transform = `translateX(-${productIndex * 100}%)`;
+    slider.style.transform = `translateX(-${productIndex * 66.5}%)`;
   }
 });
+
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
