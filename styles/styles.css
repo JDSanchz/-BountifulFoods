@@ -28,7 +28,17 @@
   }
   
   .slider-item img{
-    width: 80%;
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+  }
+  .slider h2 {
+    margin: 0;
+    text-align: center;
+  }
+  .slider p {
+    margin: 0;
+    text-align: center;
   }
   
   .arrow-container {
