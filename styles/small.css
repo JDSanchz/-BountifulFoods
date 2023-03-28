@@ -32,15 +32,6 @@
       .nav-link:hover::before {
         display: none;
       }
-      
-    .media{
-        grid-column: 2/3;
-
-    }
-    .media img{
-        width: 40px;
-
-    }
     .date{
         grid-row: 2/3;
         grid-column: 1/4;
@@ -54,7 +45,7 @@
     }
 
     #logo{
-    width: 300px;
+    width: 180px;
     }
     .nav-item {
         margin: 2.5rem 0;
@@ -67,7 +58,7 @@
     }
     .cart-w img {
         width: 50px;
-        margin-left: 200px;
+        margin-left: 30px;
     }
 
     .hamburger {
