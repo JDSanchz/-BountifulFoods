@@ -1,7 +1,7 @@
 const carousel = document.querySelector('.carousel');
 const prevButton = document.querySelector('.carousel-prev');
 const nextButton = document.querySelector('.carousel-next');
-const productsUrl = 'data/data.json';
+const productsUrl = './data/data.json';
 
 let currentIndex = 0;
 
