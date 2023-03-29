@@ -84,9 +84,48 @@
         transform: translateY(-10px) rotate(-45deg);
     } 
 
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        height: 500px;
+      }
+      
+      .carousel {
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .carousel-item {
+        flex: 0 0 auto;
+        width: 100%;
+        background-color: #fff7e3;
+        padding-bottom: 30px;
+      }
+      
+      .carousel-item img {
+        height: 350px;
+        margin: 0 auto;
+        display: block;
+      }
+      
+      .carousel-item p{
+        font-size:16px;
+        text-align: center;
+        color: #5a432b;
+        padding: 7px;
+      }
+      .carousel-item h3{
+        font-size: 26px;
+        text-align: center;
+        color: #5a432b;
+        margin-bottom: 8px;
+      }
+
     .sections-grid{
         display: flex;
         flex-direction: column;
+        height: 1200px;
       }
       .weather-card{
         background-color: #ffda9f;
@@ -96,9 +135,11 @@
         width: 100%;
         padding: 20px;
         height: 600px;
+        order: 2;
       }
       .call-action{
         background-color: rgb(39, 78, 78);
+        order: 1;
       
       }
       .locations{
