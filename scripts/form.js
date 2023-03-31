@@ -33,6 +33,9 @@ const receiptDiv = document.querySelector('.receipt');
 form.addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent the default form submission
   console.log("Event Listener Kicked In");
+  const firstName = document.getElementById('first-name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
   // Get the selected fruits and special instructions from the form
   const fruit1 = fruit1Select.value;
   const fruit2 = fruit2Select.value;
@@ -58,18 +61,47 @@ form.addEventListener('submit', (event) => {
   
 
   // Build the receipt output
-  let output = `<h2>Receipt</h2>`;
+  let output = `<h2>Order Summary</h2>`;
+  output += `<p><strong>Name:</strong> ${firstName}</p>`;
+  output += `<p><strong>Email:</strong> ${email}</p>`;
+  output += `<p><strong>Phone Number:</strong> ${phone}</p>`;
+  const now = new Date();
+const date = now.toLocaleDateString();
+const time = now.toLocaleTimeString();
+
+output += `<p><strong>Date:</strong> ${date}</p>`;
+output += `<p><strong>Time:</strong> ${time}</p>`;
   output += `<p><strong>Fruit 1:</strong> ${fruit1}</p>`;
   output += `<p><strong>Fruit 2:</strong> ${fruit2}</p>`;
   output += `<p><strong>Fruit 3:</strong> ${fruit3}</p>`;
   output += `<p><strong>Special Instructions:</strong> ${instructions}</p>`;
   output += `<hr>`;
-  output += `<p><strong>Total Carbohydrates:</strong> ${totalNutrition.carbohydrates}g</p>`;
-  output += `<p><strong>Total Protein:</strong> ${totalNutrition.protein}g</p>`;
+  output += `<h2>Nutritional Info</h2>`;
+  output += `<p><strong>Total Carbohydrates:</strong> ${totalNutrition.carbohydrates.toFixed(1)}g</p>`;
+  output += `<p><strong>Total Protein:</strong> ${totalNutrition.protein.toFixed(1)}g</p>`;
   output += `<p><strong>Total Fat:</strong> ${totalNutrition.fat.toFixed(1)}g</p>`;
-  output += `<p><strong>Total Sugar:</strong> ${totalNutrition.sugar}g</p>`;
-  output += `<p><strong>Total Calories:</strong> ${totalNutrition.calories} kcal</p>`;
+  output += `<p><strong>Total Sugar:</strong> ${totalNutrition.sugar.toFixed(1)}g</p>`;
+  output += `<p><strong>Total Calories:</strong> ${totalNutrition.calories.toFixed(1)} kcal</p>`;
 
   // Display the receipt in the receiptDiv
   receiptDiv.innerHTML = output;
+
+// Get the current count of form submissions from local storage
+let count = localStorage.getItem('formSubmissions') || 0;
+
+// Increment the count and save it to local storage
+count++;
+localStorage.setItem('formSubmissions', count);
+
+// Update the cart information in the navbar
+const cart = document.querySelector('.cart-w');
+let c = cart.querySelector('.order-counter'); // check if the element already exists
+if (!c) { // if it doesn't exist, create it
+  c = document.createElement("p");
+  c.className = "order-counter";
+  cart.appendChild(c);
+}
+c.innerHTML = count; // update the count
+
+
 });

@@ -47,6 +47,16 @@
 //   }
 //   carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 // });
+let count = localStorage.getItem('formSubmissions')
+const cart = document.querySelector('.cart-w');
+let c = cart.querySelector('.order-counter'); // check if the element already exists
+if (!c) { // if it doesn't exist, create it
+  c = document.createElement("p");
+  c.className = "order-counter";
+  c.innerHTML = count;
+  cart.appendChild(c);
+}
+
 const lastModified = new Date(document.lastModified);
 const lastModifiedElement = document.getElementById("last-mod");
 
