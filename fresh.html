@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Home</title>
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar" id="navi">
+            <a href="index.html" class="nav-logo"><img id="logo" alt="Bountiful Foods Logo" src="images/logo.jpg"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="fresh.html" class="nav-link">Fresh</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about_us.html" class="nav-link">About Us</a>
+                </li>              
+            </ul>
+            <div class="cart-w">
+                <img src="images/cart.png" alt="our cart">
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+    <main>
+<div class="fresh-main">
+      <div class="fresh-form">
+
+        <h1>Build Your Own Specialty Drink</h1>
+        <form>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required><br>
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+    
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required><br>
+    
+          <label for="fruit1">Fruit 1:</label>
+          <select id="fruit1" name="fruit1">
+            <!-- Populate with fruits from JSON -->
+          </select><br>
+    
+          <label for="fruit2">Fruit 2:</label>
+          <select id="fruit2" name="fruit2">
+            <!-- Populate with fruits from JSON -->
+          </select><br>
+    
+          <label for="fruit3">Fruit 3:</label>
+          <select id="fruit3" name="fruit3">
+            <!-- Populate with fruits from JSON -->
+          </select><br>
+    
+          <label for="instructions">Special Instructions:</label>
+          <textarea id="instructions" name="instructions"></textarea><br>
+    
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+       <div class="receipt">
+        
+       </div>
+    </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+          <img data-src="images/logof.png" src="images/place.png" alt="Logo" loading="lazy">
+        </div>
+        <p class="footer-name">Bountiful Foods</p>
+        <p class="footer-main-loc">155 Walnut Ave. Carlsbad, CA</p>
+        <div class="footer-right">
+          <div class="social-media">
+            <a href="https://facebook.com"><img data-src="images/facebook.png" src="images/place.png" alt="Facebook" loading="lazy"></a>
+            <a href="https://twitter.com"><img data-src="images/twitter.png" src="images/place.png" alt="Twitter" loading="lazy"></a>
+            <a href="https://instagram.com"><img data-src="images/instagram.png" src="images/place.png" alt="Instagram" loading="lazy"></a>
+          </div>
+          <div class="footer-text">
+            <p>Copyright: © Jesus Del Barrio. All rights reserved.</p>
+            <p id="last-mod">.</p>
+          </div>
+        </div>
+      </footer>
+      
+    <script src="scripts/main.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
