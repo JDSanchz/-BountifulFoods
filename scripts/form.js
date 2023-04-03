@@ -88,11 +88,9 @@ output += `<p><strong>Time:</strong> ${time}</p>`;
 
 // Get the current count of form submissions from local storage
 let count = localStorage.getItem('formSubmissions') || 0;
-
 // Increment the count and save it to local storage
 count++;
 localStorage.setItem('formSubmissions', count);
-
 // Update the cart information in the navbar
 const cart = document.querySelector('.cart-w');
 let c = cart.querySelector('.order-counter'); // check if the element already exists
@@ -102,6 +100,68 @@ if (!c) { // if it doesn't exist, create it
   cart.appendChild(c);
 }
 c.innerHTML = count; // update the count
-
-
 });
+
+///THIS IS TO DELETE ALL ORDERS///
+///
+///
+function resetCount() {
+  // Reset the count to 0 and update local storage
+  count = 0;
+  localStorage.setItem('formSubmissions', count);
+
+  // Update the cart information in the navbar
+  const cart = document.querySelector('.cart-w');
+  let c = cart.querySelector('.order-counter');
+
+  if (!c) {
+    // If it doesn't exist, create it
+    c = document.createElement("p");
+    c.className = "order-counter";
+    cart.appendChild(c);
+  }
+
+  // Update the count to display 0
+  c.innerHTML = 0;
+
+  // Display a pop-up message
+  window.alert("All your order have been deleted");
+}
+
+// Add an event listener to the "Delete All Orders" button
+const deleteAllButton = document.querySelector('.but-all');
+deleteAllButton.addEventListener('click', resetCount);
+
+
+/// THIS IS TO DELETE THE LAST ORDER
+///
+///
+function deleteLastOrder() {
+  // Get the current count from local storage
+  let count = localStorage.getItem('formSubmissions') || 0;
+  
+  // Decrement the count and update local storage
+  count--;
+  localStorage.setItem('formSubmissions', count);
+
+  // Update the cart information in the navbar
+  const cart = document.querySelector('.cart-w');
+  let c = cart.querySelector('.order-counter');
+
+  if (!c) {
+    // If it doesn't exist, create it
+    c = document.createElement("p");
+    c.className = "order-counter";
+    cart.appendChild(c);
+  }
+
+  // Update the count to display the new count
+  c.innerHTML = count;
+
+  // Display a pop-up message
+  window.alert("Your last order has been deleted");
+}
+
+// Add an event listener to the "Delete This Order" button
+const deleteLastButton = document.querySelector('.but-last');
+deleteLastButton.addEventListener('click', deleteLastOrder);

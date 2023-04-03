@@ -56,10 +56,10 @@
     }
     .cart-w{
         grid-column: 2/3;
+        margin-left: 85%;
     }
     .cart-w img {
         width: 50px;
-        margin-left: 200px;
     }
 
     .hamburger {

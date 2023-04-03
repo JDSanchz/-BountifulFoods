@@ -54,12 +54,13 @@
         margin-top: 8px;
     }
     .cart-w{
-        grid-column: 2/3;
-    }
-    .cart-w img {
-        width: 50px;
-        margin-left: 30px;
-    }
+      grid-column: 2/3;
+      margin-left: 55%;
+  }
+  .cart-w img {
+      width: 50px;
+  }
+
 
     .hamburger {
         display: block;
@@ -323,6 +324,58 @@
         display: block;
         border-radius: 20px;
         margin: 0 auto;
+      }
+
+      .fresh-main {
+        display: flex;
+        flex-direction: column;
+        min-height: 1100px;
+        background-color: #ffda9f;
+      }
+      .fresh-main .img-cont {
+        grid-column: 1/2;
+        width: 100%;
+        height: 300px;
+        background-image: url('../images/sms.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        order: 3;
+      }
+      
+      .fresh-form {
+        padding: 1rem;
+        background-color: #ffda9f;
+        grid-column: 2/4;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 5px;
+        order: 2;
+      }
+      .fresh-form form{
+        width: 100%;
+      }
+      
+      .receipt-grid{
+        height: 100%;
+        background-color: #f8f8f8;
+        order:1;
+        border-left: none;
+      }
+      
+      .receipt {
+        grid-column: 4/5;
+        padding: 1rem;
+        padding: 20px 20px;
+      }
+      .receipt h2{
+      font-size: 25px;
+      margin-bottom: 10px;
+      
+      }
+      .receipt p{
+        font-size: 20px;
+        margin-bottom: 5px;
       }
 
       footer {

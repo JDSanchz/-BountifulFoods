@@ -104,3 +104,16 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+/// CART TO FRESH>HTML
+const cart = document.querySelector('.cart-w');
+
+// Change the cursor to a hand on hover
+cart.addEventListener('mouseenter', () => {
+  cart.style.cursor = 'pointer';
+});
+
+// Redirect to "fresh.html" on click
+cart.addEventListener('click', () => {
+  window.location.href = 'fresh.html';
+});
