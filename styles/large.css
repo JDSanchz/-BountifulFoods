@@ -95,6 +95,7 @@ a {
   font-weight: 600;
   font-size: 15px;
   text-align: center;
+  margin-top: 3px;
 }
 
 .carousel-container {
@@ -398,6 +399,7 @@ label {
   font-weight: bold;
   margin-bottom: 5px;
   flex-basis: 100%;
+  font-size: 20px;
 }
 
 input,
