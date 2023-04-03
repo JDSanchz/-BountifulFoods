@@ -47,26 +47,18 @@
 //   }
 //   carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
 // });
-let count = localStorage.getItem('formSubmissions')
-const cart = document.querySelector('.cart-w');
-let c = cart.querySelector('.order-counter'); // check if the element already exists
-if (!c) { // if it doesn't exist, create it
-  c = document.createElement("p");
-  c.className = "order-counter";
-  c.innerHTML = count;
-  cart.appendChild(c);
-}
+let count = localStorage.getItem('formSubmissions') || 0;
+const orderCounter = document.querySelector('.order-counter');
+orderCounter.innerHTML = count;
 
+
+
+//LAST MODIFIED
 const lastModified = new Date(document.lastModified);
 const lastModifiedElement = document.getElementById("last-mod");
-
 if (lastModifiedElement) {
   lastModifiedElement.textContent = "Last modified on " + lastModified.toLocaleString();
 }
-
-
-
-
 // GENERAL LAZY LOADING 
 const images = document.querySelectorAll('img[loading="lazy"]');
 
