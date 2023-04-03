@@ -89,7 +89,6 @@ a {
   z-index: 2;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 .order-counter{
   color: #5a432b;
@@ -514,29 +513,85 @@ margin-bottom: 10px;
 /* Styles for the about page */
 
 .about-main {
-  max-width: 800px;
+  background-color: #fff7e3;
   margin: 0 auto;
-  padding: 30px;
 }
 
+.about-banner{
+  width: 100%;
+  height: 450px;
+  position: relative;
+  background-color: #5a432b;
+  background-image: url('https://ca-times.brightspotcdn.com/dims4/default/5a80d16/2147483647/strip/false/crop/3600x2401+0+0/resize/1486x991!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F9d%2F1d%2Fd6a4c5cd6efd6d02181fdfff8e4d%2Fimg-1404991-me-0403-stra-2-1-oo65441n.jpg');
+  background-size: cover;
+}
+
+.banner-text{
+  position: absolute;
+  top: 20%;
+  left: 170px;
+  color:#fff7e3;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.635);
+}
+
+.banner-text h3{
+  font-size: 35px;
+}
+.banner-text h1{
+  font-size: 55px;
+}
+
+.about-main img{
+  width: 600px;
+}
 h1, h2 {
   font-weight: bold;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 20px;
   font-size: 36px;
 }
-
+#social-responsibility{
+  background-color: #ffe1b2;
+  padding: 1px 40px 20px 40px;
+  border:5px #cdaf7f outset;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+#social-responsibility p{
+  text-align: center;
+}
 p {
-  line-height: 1.5;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 section {
   margin-bottom: 60px;
+  width: 80%;
+  margin: 0 auto;
 }
 
+#history{
+  width: 100%;
+  background-color: rgb(33, 59, 65);
+  padding: 20px 10%;
+  margin-top: 40px;
+  color: #ffffff;
+}
+
+#history img{
+  display: block;
+  margin: 30px auto;
+  width: 60%;
+  border-radius: 25px;
+}
+
+#location{
+  height: 750px ;
+}
 address {
   font-style: normal;
+  font-size: 18px;
   margin-bottom: 20px;
 }
 

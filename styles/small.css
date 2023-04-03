@@ -427,4 +427,32 @@
         margin: 0;
       }
 
+      .banner-text{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        color:#fff7e3;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.635);
+        width: 90%;
+      }
+      .banner-text h3{
+        font-size: 20px;
+      }
+      .banner-text h1{
+        font-size: 32px;
+        margin-left: 0px;
+        padding-left: 0px;
+        text-align: left;
+      }
+
+      #history img{
+        display: block;
+        margin: 30px auto;
+        width: 100%;
+        border-radius: 25px;
+      }
+      #location{
+        height: 780px ;
+      }
+
   }

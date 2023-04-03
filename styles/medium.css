@@ -332,7 +332,19 @@
       .footer-text p {
         margin: 0;
       }
-      
+      .banner-text{
+        position: absolute;
+        top: 25%;
+        left: 3%;
+        color:#fff7e3;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.635);
+      }
+      .banner-text h3{
+        font-size: 30px;
+      }
+      .banner-text h1{
+        font-size: 40px;
+      }
       
 
 }

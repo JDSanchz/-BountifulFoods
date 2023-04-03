@@ -10,26 +10,52 @@
     <link rel="stylesheet" href="styles/small.css">
 </head>
 <body>
-    <header>
-        <!-- Add your header content here, such as a navigation menu -->
-    </header>
-
+    <header class="header">
+        <nav class="navbar" id="navi">
+            <a href="index.html" class="nav-logo"><img id="logo" alt="Bountiful Foods Logo" src="images/logo.jpg"></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="fresh.html" class="nav-link">Fresh</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about_us.html" class="nav-link">About Us</a>
+                </li>              
+            </ul>
+            <div class="cart-w">
+                <div class="order-wrapper"><p class="order-counter">0</p></div>
+                <img src="images/cart.png" alt="our cart">
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
     <main>
         <div class="about-main">
+        <section class="about-banner">
+            <div class="banner-text">
+                <h3>About us</h3>
+                <h1>Serving the world one person at a time. </h1>
+            </div>
+        </section>
         <section id="company-overview">
-            <h1>Our Story</h1>
-            <img src="https://www.ppic.org/wp-content/uploads/immigrant-farmworkers.jpg" alt="Happy Californian Workers">
+            <h1>Who We Are</h1>
             <p>Bountiful Foods is a small business located in Carlsbad, California, specializing in organic, locally grown foods. We source fruits and produce directly from farmers in the area, as well as from national and international suppliers. We cater to walk-in traffic at our storefront in Carlsbad, as well as through our fleet of food trucks that cover the coastal area from Los Angeles to San Diego.</p>
             <p>Our mission is to provide fresh and healthy food options, including organic, made-to-order fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas. We believe in supporting the community and promoting healthy eating habits.</p>
         </section>
 
         <section id="social-responsibility">
-            <h2>Social Responsibility</h2>
+            <h1>Social Responsibility</h1>
             <p>At Bountiful Foods, we are committed to sustainable and environmentally-friendly practices. We use biodegradable and compostable packaging, and we prioritize working with local farmers to reduce our carbon footprint.</p>
         </section>
 
         <section id="history">
-            <h2>Our History</h2>
+            <h1>Our History</h1>
             <img src="http://res.cloudinary.com/ybmedia/image/upload/c_crop,h_1123,w_2000,x_0,y_31/c_fill,f_auto,h_900,q_auto,w_1600/v1/m/4/a/4ae7f37a96cd2edb7f6a38f6e8f7f793e72a3ea9/20-facts-might-know-signs.jpg" alt="Tucker Carson emerging from the field">
             <p>Bountiful Foods was founded in 2023, shortly after the attacks of alien California residents. The Carson family, who had been farmers for generations, saw an opportunity to provide fresh and healthy food options to the affected community. They worked tirelessly to source locally grown produce, and started selling fruit and vegetable bags out of the trunk of their almost destroyed car.</p>
             <p>As the population started growing demand for their products grew as well, the Carsons opened a small storefront in Carlsbad, and eventually expanded to a fleet of alien-enhanced food trucks that covered the coastal area from Los Angeles to San Diego. Today, Bountiful Foods continues to prioritize working with local farmers and promoting healthy eating habits.</p>
@@ -38,7 +64,7 @@
 
         <section id="location">
             <h2>Our Location</h2>
-            <p>We are located at:</p>
+            <p>Headquarters</p>
             <address>
                 Bountiful Foods<br>
                 155 Walnut Ave<br>
@@ -50,9 +76,26 @@
         </section>
     </div>
     </main>
-
     <footer>
-        <!-- Add your footer content here, such as links to social media or a contact form -->
-    </footer>
+        <div class="footer-left">
+          <img data-src="images/logof.png" src="images/place.png" alt="Logo" loading="lazy">
+        </div>
+        <p class="footer-name">Bountiful Foods</p>
+        <p class="footer-main-loc">155 Walnut Ave. Carlsbad, CA</p>
+        <div class="footer-right">
+          <div class="social-media">
+            <a href="https://facebook.com"><img data-src="images/facebook.png" src="images/place.png" alt="Facebook" loading="lazy"></a>
+            <a href="https://twitter.com"><img data-src="images/twitter.png" src="images/place.png" alt="Twitter" loading="lazy"></a>
+            <a href="https://instagram.com"><img data-src="images/instagram.png" src="images/place.png" alt="Instagram" loading="lazy"></a>
+          </div>
+          <div class="footer-text">
+            <p>Copyright: © Jesus Del Barrio. All rights reserved.</p>
+            <p id="last-mod">.</p>
+          </div>
+        </div>
+      </footer>
+      <script src="scripts/car.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
