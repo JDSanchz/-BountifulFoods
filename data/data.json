@@ -3,12 +3,12 @@
       {
         "name": "Berries Smoothie Bowl",
         "description": "Product A is a high-quality, durable item that is perfect for everyday use. Its sleek design and comfortable grip make it a must-have for any home.",
-        "img_path": "images/product_a.png"
+        "img_path": "images/product_a.webp"
       },
       {
         "name": "Electric Orange Juice",
         "description": "Product B is a versatile tool that can be used for a variety of tasks. Its compact size and easy-to-use features make it ideal for both novice and experienced users.",
-        "img_path": "images/product_b.png"
+        "img_path": "images/product_b.webp"
       },
       {
         "name": "Magical Grapes",

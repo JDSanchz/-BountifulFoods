@@ -441,7 +441,7 @@ textarea {
 .fresh-main .img-cont {
   grid-column: 1/2;
   width: 100%;
-  background-image: url('../images/sms.jpg');
+  background-image: url('../images/sms.webp');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
