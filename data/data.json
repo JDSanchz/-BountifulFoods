@@ -1,33 +1,33 @@
 {
     "products": [
       {
-        "name": "Berries Smoothie Bowl",
-        "description": "Product A is a high-quality, durable item that is perfect for everyday use. Its sleek design and comfortable grip make it a must-have for any home.",
+        "name": "Wild Smoothie Bowl",
+        "description": "Indulge in the sweet and tart flavors of our Wild Berries Smoothie Bowl, topped with fresh fruit, crunchy granola, and creamy yogurt for a healthy and delicious breakfast or snack.",
         "img_path": "images/product_a.webp"
       },
       {
         "name": "Electric Orange Juice",
-        "description": "Product B is a versatile tool that can be used for a variety of tasks. Its compact size and easy-to-use features make it ideal for both novice and experienced users.",
+        "description": "Our Electric Orange Juice is freshly squeezed and bursting with zesty citrus flavor. Packed with vitamin C, it's the perfect pick-me-up for any time of day.",
         "img_path": "images/product_b.webp"
       },
       {
         "name": "Magical Grapes",
-        "description": "Product C is a premium product that is built to last. Its advanced features and cutting-edge technology make it a top choice for professionals and enthusiasts alike.",
+        "description": "Experience the enchanting taste of our Magical Grapes - plump and juicy, with a perfect balance of sweetness and tartness. A snack that's sure to delight your taste buds.",
         "img_path": "images/product_c.png"
       },
       {
         "name": "Royal Shake",
-        "description": "Product C is a premium product that is built to last. Its advanced features and cutting-edge technology make it a top choice for professionals and enthusiasts alike.",
+        "description": "Indulge in our Royal Shake - a decadent blend of rich chocolate, high-quality protein, and pure cocoa. Perfect for a post-workout boost or a guilt-free treat.",
         "img_path": "images/product_d.png"
       },
       {
         "name": "Crazy Bananas",
-        "description": "Product C is a premium product that is built to last. Its advanced features and cutting-edge technology make it a top choice for professionals and enthusiasts alike.",
+        "description": "Experience the out-of-this-world flavor of our Crazy Bananas, grown with alien technology. Sweet, creamy, and packed with nutrients, they're a snack that's truly out of this world.",
         "img_path": "images/product_e.png"
       },
       {
         "name": "Fiery Watermelons",
-        "description": "Product C is a premium product that is built to last. Its advanced features and cutting-edge technology make it a top choice for professionals and enthusiasts alike.",
+        "description": "Satisfy your cravings with our Fiery Watermelons - juicy and refreshing with a spicy kick from Tajin powder. A unique and delicious twist on a summertime favorite.",
         "img_path": "images/product_f.png"
       }
     ]
